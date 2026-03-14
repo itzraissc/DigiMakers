@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DigiMakers - Criamos MicroSaaS inteligentes com IA para resolver seus problemas reais. Ferramentas simples, poderosas e acessíveis.">
+    <meta name="keywords" content="MicroSaaS, IA, PDF converter, transcrição, ferramentas online, DigiMakers">
+    <meta name="author" content="DigiMakers">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="DigiMakers — MicroSaaS que Resolvem Problemas Reais">
+    <meta property="og:description" content="Ferramentas inteligentes com IA. Simples. Poderosas. Acessíveis.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digimakers.github.io">
+
+    <title>DigiMakers — MicroSaaS Inteligentes com IA</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== LOADER ========== -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-bracket">{</span>
+                <span class="loader-text">DM</span>
+                <span class="loader-bracket">}</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#home" class="navbar-brand">
+                <span class="brand-bracket">{</span>
+                <span class="brand-name">Digi<span class="brand-highlight">Makers</span></span>
+                <span class="brand-bracket">}</span>
+            </a>
+
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#products" class="nav-link">Produtos</a></li>
+                <li><a href="#features" class="nav-link">Diferenciais</a></li>
+                <li><a href="#pricing" class="nav-link">Planos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <a href="#products" class="btn btn-primary btn-sm">Explorar Produtos</a>
+                <button class="navbar-toggle" id="navToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-link">Início</a></li>
+                <li><a href="#about" class="mobile-link">Sobre</a></li>
+                <li><a href="#products" class="mobile-link">Produtos</a></li>
+                <li><a href="#features" class="mobile-link">Diferenciais</a></li>
+                <li><a href="#pricing" class="mobile-link">Planos</a></li>
+                <li><a href="#contact" class="mobile-link">Contato</a></li>
+            </ul>
+            <a href="#products" class="btn btn-primary btn-block">Explorar Produtos</a>
+        </div>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-glow hero-glow-3"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-animate="fade-up">
+                    <span class="badge-dot"></span>
+                    <span>Impulsionado por Inteligência Artificial</span>
+                </div>
+
+                <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                    Criamos <span class="gradient-text">MicroSaaS</span> que
+                    <br>
+                    <span class="typed-wrapper">
+                        resolvem <span class="typed-text" id="typedText"></span>
+                        <span class="typed-cursor">|</span>
+                    </span>
+                </h1>
+
+                <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                    Ferramentas inteligentes, simples e poderosas para automatizar
+                    tarefas, economizar tempo e transformar a maneira como você trabalha.
+                </p>
+
+                <div class="hero-cta" data-animate="fade-up" data-delay="300">
+                    <a href="#products" class="btn btn-primary btn-lg">
+                        <i data-lucide="rocket" class="btn-icon"></i>
+                        Ver Produtos
+                    </a>
+                    <a href="#about" class="btn btn-ghost btn-lg">
+                        Conheça a DigiMakers
+                        <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Produtos em Desenvolvimento</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Potencializado por IA</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="24">0</span><span class="stat-suffix">/7</span>
+                        <span class="stat-label">Disponível Online</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-animate="fade-left" data-delay="200">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="card-title-bar">digimakers_engine.ai</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="code-line">
+                            <span class="code-keyword">const</span>
+                            <span class="code-var"> solution</span>
+                            <span class="code-operator"> = </span>
+                            <span class="code-keyword">await</span>
+                            <span class="code-func"> DigiMakers</span>
+                            <span class="code-punct">.</span>
+                            <span class="code-func">solve</span>
+                            <span class="code-punct">(</span>
+                        </div>
+                        <div class="code-line code-indent">
+                            <span class="code-string">"seu_problema"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-punct">);</span>
+                        </div>
+                        <div class="code-line code-blank"></div>
+                        <div class="code-line">
+                            <span class="code-comment">// ✨ Resultado:</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-comment">// → Problema resolvido com IA</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-comment">// → Tempo economizado: 95%</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-comment">// → Satisfação: 100%</span>
+                        </div>
+                        <div class="code-line code-blank"></div>
+                        <div class="code-line">
+                            <span class="code-keyword">return</span>
+                            <span class="code-string"> "🚀 Sucesso!"</span>
+                            <span class="code-punct">;</span>
+                        </div>
+                    </div>
+                    <div class="card-pulse"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll</span>
+                <i data-lucide="chevron-down" class="scroll-icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Sobre Nós</span>
+                <h2 class="section-title">
+                    A fábrica de <span class="gradient-text">soluções digitais</span>
+                </h2>
+                <p class="section-subtitle">
+                    A DigiMakers nasceu com uma missão clara: identificar problemas
+                    reais do dia a dia e criar MicroSaaS inteligentes que resolvam
+                    cada um deles de forma simples, rápida e acessível.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card" data-animate="fade-up" data-delay="0">
+                    <div class="about-icon">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <h3>Foco em Problemas Reais</h3>
+                    <p>
+                        Não criamos tecnologia por criar. Cada produto nasce de uma
+                        dor real identificada. Se incomoda você, a gente resolve.
+                    </p>
+                </div>
+
+                <div class="about-card" data-animate="fade-up" data-delay="100">
+                    <div class="about-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3>IA no DNA</h3>
+                    <p>
+                        Inteligência Artificial não é buzzword para nós. É a base
+                        de cada ferramenta, garantindo resultados inteligentes e precisos.
+                    </p>
+                </div>
+
+                <div class="about-card" data-animate="fade-up" data-delay="200">
+                    <div class="about-icon">
+                        <i data-lucide="infinity"></i>
+                    </div>
+                    <h3>Ecossistema Infinito</h3>
+                    <p>
+                        Não nos limitamos. Criamos continuamente novos MicroSaaS
+                        para resolver cada vez mais problemas de diferentes áreas.
+                    </p>
+                </div>
+
+                <div class="about-card" data-animate="fade-up" data-delay="300">
+                    <div class="about-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3>Simples e Poderoso</h3>
+                    <p>
+                        Interfaces limpas, resultados rápidos. Nossos produtos são
+                        feitos para qualquer pessoa usar sem complicação.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Nossos Produtos</span>
+                <h2 class="section-title">
+                    MicroSaaS <span class="gradient-text">para cada necessidade</span>
+                </h2>
+                <p class="section-subtitle">
+                    Cada ferramenta é um produto independente, focado em resolver
+                    um problema específico com máxima eficiência.
+                </p>
+            </div>
+
+            <div class="products-grid">
+                <!-- UniPDF Converter - Featured -->
+                <div class="product-card product-featured" data-animate="fade-up" data-delay="0">
+                    <div class="product-badge-hot">🔥 Primeiro Lançamento</div>
+                    <div class="product-icon-wrapper">
+                        <div class="product-icon product-icon-pdf">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                    </div>
+                    <h3 class="product-name">UniPDF Converter</h3>
+                    <p class="product-tagline">Converta qualquer arquivo em PDF. Simples assim.</p>
+                    <ul class="product-features-list">
+                        <li><i data-lucide="check-circle"></i> Suporte a 50+ formatos</li>
+                        <li><i data-lucide="check-circle"></i> Conversão em segundos com IA</li>
+                        <li><i data-lucide="check-circle"></i> Qualidade profissional garantida</li>
+                        <li><i data-lucide="check-circle"></i> 100% seguro e privado</li>
+                    </ul>
+                    <div class="product-status status-live">
+                        <span class="status-dot"></span>
+                        Em Desenvolvimento Ativo
+                    </div>
+                    <a href="#pricing" class="btn btn-primary btn-block">
+                        <i data-lucide="rocket" class="btn-icon"></i>
+                        Saiba Mais
+                    </a>
+                </div>
+
+                <!-- TranscribeAI -->
+                <div class="product-card" data-animate="fade-up" data-delay="100">
+                    <div class="product-icon-wrapper">
+                        <div class="product-icon product-icon-transcribe">
+                            <i data-lucide="captions"></i>
+                        </div>
+                    </div>
+                    <h3 class="product-name">TranscribeAI</h3>
+                    <p class="product-tagline">Transcrição de vídeos do YouTube organizada e formatada.</p>
+                    <ul class="product-features-list">
+                        <li><i data-lucide="check-circle"></i> Transcrição inteligente</li>
+                        <li><i data-lucide="check-circle"></i> Formatação automática</li>
+                        <li><i data-lucide="check-circle"></i> Exportar em vários formatos</li>
+                    </ul>
+                    <div class="product-status status-soon">
+                        <span class="status-dot"></span>
+                        Em Breve
+                    </div>
+                </div>
+
+                <!-- SubtitleForge -->
+                <div class="product-card" data-animate="fade-up" data-delay="200">
+                    <div class="product-icon-wrapper">
+                        <div class="product-icon product-icon-subtitle">
+                            <i data-lucide="languages"></i>
+                        </div>
+                    </div>
+                    <h3 class="product-name">SubtitleForge</h3>
+                    <p class="product-tagline">Gere legendas perfeitas de qualquer áudio automaticamente.</p>
+                    <ul class="product-features-list">
+                        <li><i data-lucide="check-circle"></i> Reconhecimento de fala por IA</li>
+                        <li><i data-lucide="check-circle"></i> Multi-idiomas</li>
+                        <li><i data-lucide="check-circle"></i> Sincronização precisa</li>
+                    </ul>
+                    <div class="product-status status-soon">
+                        <span class="status-dot"></span>
+                        Em Breve
+                    </div>
+                </div>
+
+                <!-- More Coming -->
+                <div class="product-card product-card-cta" data-animate="fade-up" data-delay="300">
+                    <div class="product-icon-wrapper">
+                        <div class="product-icon product-icon-more">
+                            <i data-lucide="plus"></i>
+                        </div>
+                    </div>
+                    <h3 class="product-name">E muito mais...</h3>
+                    <p class="product-tagline">
+                        Novos MicroSaaS são lançados constantemente.
+                        Cada problema identificado vira uma nova solução.
+                    </p>
+                    <div class="product-coming-icons">
+                        <i data-lucide="image"></i>
+                        <i data-lucide="bar-chart-3"></i>
+                        <i data-lucide="mail"></i>
+                        <i data-lucide="shield"></i>
+                        <i data-lucide="code"></i>
+                    </div>
+                    <a href="#contact" class="btn btn-outline btn-block">
+                        Sugira um Produto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Por que a DigiMakers?</span>
+                <h2 class="section-title">
+                    Diferenciais que <span class="gradient-text">fazem a diferença</span>
+                </h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item" data-animate="fade-up" data-delay="0">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>Pagamentos Seguros</h3>
+                        <p>Integração com Stripe, a plataforma de pagamentos mais segura e confiável do mundo.</p>
+                    </div>
+                    <div class="feature-icon-bg">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                </div>
+
+                <div class="feature-item" data-animate="fade-up" data-delay="100">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>IA de Ponta</h3>
+                        <p>Modelos de inteligência artificial atualizados para entregar resultados superiores.</p>
+                    </div>
+                    <div class="feature-icon-bg">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                </div>
+
+                <div class="feature-item" data-animate="fade-up" data-delay="200">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>Velocidade Extrema</h3>
+                        <p>Processamento otimizado na nuvem. Resultados em segundos, não minutos.</p>
+                    </div>
+                    <div class="feature-icon-bg">
+                        <i data-lucide="gauge"></i>
+                    </div>
+                </div>
+
+                <div class="feature-item" data-animate="fade-up" data-delay="300">
+                    <div class="feature-number">04</div>
+                    <div class="feature-content">
+                        <h3>Privacidade Total</h3>
+                        <p>Seus arquivos são processados e deletados automaticamente. Zero armazenamento.</p>
+                    </div>
+                    <div class="feature-icon-bg">
+                        <i data-lucide="lock"></i>
+                    </div>
+                </div>
+
+                <div class="feature-item" data-animate="fade-up" data-delay="400">
+                    <div class="feature-number">05</div>
+                    <div class="feature-content">
+                        <h3>Preços Justos</h3>
+                        <p>Planos acessíveis e transparentes. Pague apenas pelo que usar, sem surpresas.</p>
+                    </div>
+                    <div class="feature-icon-bg">
+                        <i data-lucide="badge-dollar-sign"></i>
+                    </div>
+                </div>
+
+                <div class="feature-item" data-animate="fade-up" data-delay="500">
+                    <div class="feature-number">06</div>
+                    <div class="feature-content">
+                        <h3>Suporte Humanizado</h3>
+                        <p>Atendimento real e rápido. Não é chatbot genérico, é gente que resolve.</p>
+                    </div>
+                    <div class="feature-icon-bg">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Planos</span>
+                <h2 class="section-title">
+                    Invista em <span class="gradient-text">produtividade</span>
+                </h2>
+                <p class="section-subtitle">
+                    Planos flexíveis para cada necessidade. Comece grátis e escale quando precisar.
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Free -->
+                <div class="pricing-card" data-animate="fade-up" data-delay="0">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Starter</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">R$</span>
+                            <span class="price-amount">0</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <p class="pricing-desc">Perfeito para experimentar</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> 5 conversões/mês</li>
+                        <li><i data-lucide="check"></i> Arquivos até 10MB</li>
+                        <li><i data-lucide="check"></i> Formatos básicos</li>
+                        <li><i data-lucide="check"></i> Suporte por email</li>
+                        <li class="disabled"><i data-lucide="x"></i> API Access</li>
+                        <li class="disabled"><i data-lucide="x"></i> Prioridade no processamento</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Começar Grátis</a>
+                </div>
+
+                <!-- Pro -->
+                <div class="pricing-card pricing-popular" data-animate="fade-up" data-delay="100">
+                    <div class="pricing-popular-badge">⚡ Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Pro</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">R$</span>
+                            <span class="price-amount">29</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <p class="pricing-desc">Para profissionais e criadores</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> Conversões ilimitadas</li>
+                        <li><i data-lucide="check"></i> Arquivos até 100MB</li>
+                        <li><i data-lucide="check"></i> Todos os formatos</li>
+                        <li><i data-lucide="check"></i> Suporte prioritário</li>
+                        <li><i data-lucide="check"></i> API Access</li>
+                        <li><i data-lucide="check"></i> Processamento prioritário</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Assinar Pro</a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="pricing-card" data-animate="fade-up" data-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">R$</span>
+                            <span class="price-amount">99</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <p class="pricing-desc">Para times e empresas</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> Tudo do Pro</li>
+                        <li><i data-lucide="check"></i> Arquivos ilimitados</li>
+                        <li><i data-lucide="check"></i> Acesso a todos os SaaS</li>
+                        <li><i data-lucide="check"></i> Suporte 24/7 dedicado</li>
+                        <li><i data-lucide="check"></i> API ilimitada</li>
+                        <li><i data-lucide="check"></i> SLA garantido</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Falar com Vendas</a>
+                </div>
+            </div>
+
+            <div class="pricing-trust" data-animate="fade-up">
+                <div class="trust-item">
+                    <i data-lucide="shield-check"></i>
+                    <span>Pagamento seguro via Stripe</span>
+                </div>
+                <div class="trust-item">
+                    <i data-lucide="refresh-ccw"></i>
+                    <span>Garantia de 7 dias</span>
+                </div>
+                <div class="trust-item">
+                    <i data-lucide="x-circle"></i>
+                    <span>Cancele quando quiser</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box" data-animate="fade-up">
+                <div class="cta-bg-effects">
+                    <div class="cta-glow"></div>
+                </div>
+                <h2>Pronto para resolver seus problemas com IA?</h2>
+                <p>Junte-se a quem já está economizando tempo e dinheiro com nossas ferramentas inteligentes.</p>
+                <div class="cta-actions">
+                    <a href="#products" class="btn btn-white btn-lg">
+                        <i data-lucide="rocket" class="btn-icon"></i>
+                        Começar Agora
+                    </a>
+                    <a href="#contact" class="btn btn-ghost-white btn-lg">
+                        Entrar em Contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Contato</span>
+                <h2 class="section-title">
+                    Vamos <span class="gradient-text">conversar?</span>
+                </h2>
+                <p class="section-subtitle">
+                    Dúvidas, sugestões de novos produtos ou parcerias? Fale com a gente.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-up" data-delay="0">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@digimakers.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>100% Digital — Atendemos o mundo todo</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <div>
+                            <h4>Horário</h4>
+                            <p>Nossos SaaS funcionam 24/7</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" data-animate="fade-up" data-delay="100">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione...</option>
+                            <option value="duvida">Dúvida sobre produto</option>
+                            <option value="sugestao">Sugestão de produto</option>
+                            <option value="parceria">Parceria</option>
+                            <option value="suporte">Suporte técnico</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                        <i data-lucide="send" class="btn-icon"></i>
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="navbar-brand">
+                        <span class="brand-bracket">{</span>
+                        <span class="brand-name">Digi<span class="brand-highlight">Makers</span></span>
+                        <span class="brand-bracket">}</span>
+                    </a>
+                    <p>Criando MicroSaaS inteligentes com IA para resolver problemas reais do dia a dia.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#products">UniPDF Converter</a></li>
+                        <li><a href="#products">TranscribeAI</a></li>
+                        <li><a href="#products">SubtitleForge</a></li>
+                        <li><a href="#products">Ver Todos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#features">Diferenciais</a></li>
+                        <li><a href="#pricing">Planos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">LGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> DigiMakers. Todos os direitos reservados.</p>
+                <p class="footer-tagline">Feito com <span class="heart">♥</span> e muita IA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
